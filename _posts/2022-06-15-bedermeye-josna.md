@@ -1,8 +1,5 @@
 ---
-published: false
----
----
-title: Doing Recon on a Large Scope
+title: New post
 tags: [bug hunting, recon, enumeration, OSINT]
 categories: [New, Sub]
 comments: true
