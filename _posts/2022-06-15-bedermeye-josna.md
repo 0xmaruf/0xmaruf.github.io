@@ -3,7 +3,7 @@ title: New post
 tags: [bug hunting, recon, enumeration, OSINT]
 categories: [New, Sub]
 comments: true
-date: 2020-04-08 11:33:00
+date: 2022-06-15 11:33:00
 ---
 
 ## A New Post
