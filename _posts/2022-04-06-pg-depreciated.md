@@ -3,7 +3,7 @@ title: Depreciated Box on Offensive Security Proving Grounds - OSCP Preparation.
 tags: [oscp medium box, PG medium box, enumeration, graphql, misc, privilege escalation, linux]
 categories: [OSCP, Proving Grounds]
 comments: true
-date: 2022-04-06 11:33:00
+date: 2022-06-15 11:33:00
 ---
 
 Hello,
