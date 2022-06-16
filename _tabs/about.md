@@ -3,8 +3,9 @@ title: About
 icon: fas fa-info-circle
 order: 4
 ---
-<h1>Md Maruf Hosan</h1>
+<center><h1>Md Maruf Hosan</h1>
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=monospase&size=22&duration=4998&color=FFF7F1&background=27050500&lines=I'm+a+cybersecurity+reseacher+from+Bangladesh)](https://git.io/typing-svg)
+  </center>
 
 ## Follow me on: 
 - [Twitter](https://twitter.com/hack1lab)
