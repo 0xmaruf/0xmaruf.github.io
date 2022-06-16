@@ -40,14 +40,14 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: bing0o
-  email: mail@mail.me             # change to your email address
+  name: 0xmaruf
+  email: mrmrf662@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/thikermaruff      # change to your twitter homepage
-    - https://github.com/thikermaruf       # change to your github homepage
+    - https://twitter.com/thinkermaruff      # change to your twitter homepage
+    - https://github.com/thinkermaruf       # change to your github homepage
     # Uncomment below to add more social links
-    - https://www.facebook.com/thikermaruf
+    - https://www.facebook.com/thinkermaruf
     # - https://www.linkedin.com/in/username
 
 google_site_verification: NZu7dKzlS7GZQF3j8UXtW4brV-Be2jXrLzIUIEVd4Xg              # fill in to your verification string
