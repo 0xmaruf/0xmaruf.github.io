@@ -24,3 +24,15 @@ order: 3
 
 ### Waybackurls Validators
 + ``waybackurls http://bugcrowd.com | grep "url" | xargs -n 1 curl -s -o /dev/null -w "%{http_code} > %{url_effective}\n" | sort``
+
+### Extract all endpoints from js file
++ ``cat files.txt | grep -aoP "(?<=(\"|\'|`))\/[a-zA-Z0-9?&=\/-#.](?=(\"|\'|`))" | sort -u | tee output.txt``
+
+### OneLiner  http://rapiddns.io Curl for Doamin Recon :
++ ``curl -s "https://rapiddns.io/subdomain/paypal.com?full=1#result" | grep "<td><a" | cut -d '"' -f 2 | cut -d '/' -f3  | sed 's/?t=cname//g' | sed 's/#result//g' | sed 's/\.$//' | sort -u``
+
+### Check Mass CNAME records
+``cat live-domains.txt | while read domains;do dig $domains;done | grep CNAME``
+
+
+
