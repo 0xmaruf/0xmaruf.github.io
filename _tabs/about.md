@@ -4,11 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Hello and welcome to my blog,
-
-This is bing0o, and this is my simple blog where I share some Hacking stuff like bug hunting, CTFs, HackTheBox, Tools, Coding Things! .... and so on.
-
-I hope you guys enjoy my posts.
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=22&duration=4998&color=000000&background=27050500&lines=This+is+Md+Maruf+Hosan+aka+0xmaruf;I'm+a+cybersecurity+reseacher+from+Bangladesh)](https://git.io/typing-svg)
 
 ## Follow me on: 
 - [Twitter](https://twitter.com/hack1lab)
