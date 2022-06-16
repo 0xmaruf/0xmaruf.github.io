@@ -21,9 +21,9 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: bing0o                          # the main title
+title: Mr.Cyrex                          # the main title
 
-tagline: Offensive.Security("AllTheThings")   # it will display as the sub-title
+tagline: Cybersecurity Researcher   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Personal blog to share some CyberSecurity stuff.
@@ -32,10 +32,10 @@ description: >-                        # used by seo meta and the atom feed
 url: 'https://thinkermaruf.github.io'
 
 github:
-  username: bing0o             # change to your github username
+  username: thinkermaruf             # change to your github username
 
 twitter:
-  username: hack1lab            # change to your twitter username
+  username: thinkermaruff            # change to your twitter username
 
 social:
   # Change to your full name.
@@ -44,10 +44,10 @@ social:
   email: mail@mail.me             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/hack1lab      # change to your twitter homepage
-    - https://github.com/bing0o       # change to your github homepage
+    - https://twitter.com/thikermaruff      # change to your twitter homepage
+    - https://github.com/thikermaruf       # change to your github homepage
     # Uncomment below to add more social links
-    - https://www.facebook.com/hack1lab
+    - https://www.facebook.com/thikermaruf
     # - https://www.linkedin.com/in/username
 
 google_site_verification: NZu7dKzlS7GZQF3j8UXtW4brV-Be2jXrLzIUIEVd4Xg              # fill in to your verification string
