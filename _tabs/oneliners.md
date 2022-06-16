@@ -19,3 +19,8 @@ order: 3
 ### wordpress mysql <br>
 + ```sublist3r -d target.com | httpx -silent -path "/wp-content/mysql.sql" -mc 200 -t 250 -ports 80,443,8080,8443```
 
+### Get all urls from sitemap
++ ``curl -s https://target.com/sitemap.xml | xmllint --format - | grep -e 'loc' | sed -r 's|</?loc>||g'``
+
+### Waybackurls Validators
++ ``waybackurls http://bugcrowd.com | grep "url" | xargs -n 1 curl -s -o /dev/null -w "%{http_code} > %{url_effective}\n" | sort``
