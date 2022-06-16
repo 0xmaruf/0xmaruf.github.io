@@ -5,8 +5,7 @@ order: 4
 ---
 ![avatar](https://images.weserv.nl/?url=https://i.imgur.com/l0N48kH.png?v=4&h=400&w=350&fit=cover&mask=circle&maxage=7d)
 <h1 align="center">Md Maruf Hosan</h1><br>
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=15A90B&multiline=true&height=100&lines=I'm+a+cybersecurity+researcher+form+Bangladesh;Bug+bounty+hunter+at+HackerOne;If+security+is+just+a+joke+then+i'm+a+comedian+;Sphinx+of+black+quartz%2C+judge+my+vow)](https://git.io/typing-svg)
-
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=15A90B&multiline=true&width=700&height=500&lines=I'm+a+cybersecurity+researcher+form+Bangladesh;Bug+bounty+hunter+at+HackerOne;A+newbie+hacker++attempted++to+secure+the+cyber+world;.%2Flogging+out)](https://git.io/typing-svg)
 
 
 <br><br><br><br><br><br>
