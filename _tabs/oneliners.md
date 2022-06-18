@@ -55,3 +55,5 @@ order: 3
 ### Get subdomain from securitytrails
 + ``curl -s "https://securitytrails.com/list/apex_domain/HOST" | grep -Po "((http|https):\/\/)?(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | grep ".HOST" | sort -u``
 
+### Scan juicy ports only
++ ``nmap -sV -p 21,22,80,25,465,587,1617,3000,4848,5985,8022,8080,8282,8484,\ 8585,9200,49153,49154,49202,49203 -v target.com``
