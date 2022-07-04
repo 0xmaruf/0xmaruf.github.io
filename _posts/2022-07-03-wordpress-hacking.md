@@ -1,7 +1,7 @@
 ---
 title: Wordpress HackTricks
-tags: [bug hunting, recon, enumeration, OSINT]
-categories: [bug hunting, recon]
+tags: [bug hunting, wordpress]
+categories: [bug hunting, wordpress]
 date: 2022-07-03 11:33:00
 ---
 
