@@ -1,7 +1,7 @@
 ---
 title: Proofpoint_Hacktricks
-tags: [bug hunting, proofpoint]
-categories: [BUG BOUNTY 1, proofpoint]
+tags: [bug hunting 2, proofpoint]
+categories: [bug hunting 2, proofpoint]
 date: 2022-02-09 11:13:00
 ---
 
