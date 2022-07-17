@@ -5,4 +5,9 @@ categories: [services, proofpoint]
 date: 2022-02-09 11:13:00
 ---
 
-##Hacker
+## Hacking Proofpoint Services
+
++  /securereader/init.jsf
++  /securereader/registration.jsf
++  /securereader/login.jsf
++  DEFAULT PORT: 10000,10020.10010
