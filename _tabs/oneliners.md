@@ -59,4 +59,4 @@ order: 3
 + ``nmap -sV -p 21,22,80,25,465,587,1617,3000,4848,5985,8022,8080,8282,8484,\ 8585,9200,49153,49154,49202,49203 -v target.com``
 
 ### Dependency Confusion check NPM rsgistry
-+ ``cat package.json | jq -r '.dependencies + .devDependencies' | cut -d : -f 1 | tr -d '"|}|{' | sort -u | tr -s "     " | sort -u | xargs -n1 -I{} echo "https://registry.npmjs.org/{}" | grep -v "@" | httpx -status-code -silent -content-length -mc 200``
++ ``cat package.json | jq -r '.dependencies + .devDependencies' | cut -d : -f 1 | tr -d '"|}|{' | sort -u | tr -s "     " | sort -u | xargs -n1 -I{} echo "https://registry.npmjs.org/{}" | grep -v "@" | httpx -status-code -silent -content-length -mc 404``
