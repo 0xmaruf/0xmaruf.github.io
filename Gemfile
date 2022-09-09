@@ -19,4 +19,4 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 # Jekyll <= 4.2.0 compatibility with Ruby 3.0
-gem "webrick"
+gem "webrick", "~> 1.6.1"
