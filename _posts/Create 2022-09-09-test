@@ -1,0 +1,22 @@
+---
+title: Zend
+tags: [bug hunting, zend]
+categories: [bug hunting, zend]
+date: 2022-03-07 11:33:00
+---
+
+
+
+# Zend Common Bugs
+
+## Introduction
+What would you do if you came across a website that uses Zend?
+
+## How to Detect
+`-`
+
+1. Finding config files
+```
+https://target.com/application/configs/application.ini
+https://target.com/admin/configs/application.ini
+```
