@@ -4,4 +4,4 @@ icon: fas fa-info-circle
 order: 2
 ---
 
-Here is my all Writeups [Medium posts](https://0xmaruf.medium.com/).
+Take a look at my [Medium posts](https://0xmaruf.medium.com/ "Git Weekly is published there!").
