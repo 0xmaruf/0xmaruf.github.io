@@ -7,11 +7,9 @@ order: 10
 <h1 align="center">Md Maruf Hosan</h1><br>
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=15A90B&multiline=true&width=700&height=500&lines=I'm+a+cybersecurity+researcher+form+Bangladesh;Bug+bounty+hunter+at+HackerOne;A+newbie+hacker++attempted++to+secure+the+cyber+world;.%2Flogging+out)](https://git.io/typing-svg)
 
-
-<br><br><br><br><br><br>
-
-
+<script src="https://tryhackme.com/badge/780589"></script>
+<br><br><br><br>
 ## Follow me on: 
-- [Twitter](https://twitter.com/hack1lab)
-- [Facebook](https://facebook.com/hack1lab).
-- [Github](https://github.com/bing0o).
+- [Twitter](https://twitter.com/0xmaruf)
+- [Facebook](https://facebook.com/0xmaruf).
+- [Github](https://github.com/0xmaruf).
