@@ -73,7 +73,7 @@ order: 3
 
 ### Paramspider and kxss oneliners
 + ``for URL in $(</home/kali/Desktop/subdomains.txt); do (python3 paramspider.py -d "${URL}");
-done
+done``
+
 #Merge all txt files to one txt and run it on kxss
-cat * | sort -u | tee merged.txt | kxss 
-``
+``cat * | sort -u | tee merged.txt | kxss``
