@@ -53,7 +53,7 @@ order: 3
 + ``curl -s "https://certspotter.com/api/v1/issuances?domain=HOST&include_subdomains=true&expand=dns_names" | jq .[].dns_names | grep -Po "(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | sort -u ``
 
 ### Get subdomain from securitytrails
-+ ``curl -s "https://api.securitytrails.com/v1/domain/target.com/subdomains" -H "APIKEY: your_api_key" | jq -r '.subdomains[]' ``
++ `` curl -s "https://api.securitytrails.com/v1/domain/target.com/subdomains" -H "APIKEY: {YourApiKey}" | jq -r '.subdomains[] | "\(.)" + "." + "target.com"' ``
 
 ### Scan juicy ports only
 + ``nmap -sV -p 21,22,80,25,465,587,1617,3000,4848,5985,8022,8080,8282,8484,\ 8585,9200,49153,49154,49202,49203 -v target.com``
